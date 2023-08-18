@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pizza shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css_shop.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section id="billboard" class="position-relative overflow-hidden">
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"
+          style="background-image: url(images/food-pizza-still-life-hd-wallpaper-preview.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+          <div class="container ">
+            <div class="row">
+              <div class="offset-md-1 col-md-6">
+              </div>
+              <div class="col-md-5"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"
+          style="background-image: url(images/Pizza_Cheese_Piece_540633_1920x1080.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+          <div class="container">
+            <div class="row">
+              <div class="offset-md-6 col-md-6">
+              </div>
+              <div class="col-md-5"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"
+          style="background-image: url(images/pizza-03.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+          <div class="container">
+            <div class="row">
+              <div class="offset-md-1 col-md-6">
+              </div>
+              <div class="col-md-5"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"
+          style="background-image: url(images/lovepik-salmon-pizza-picture_500966097.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+        </div>
+        <div class="swiper-slide"
+          style="background-image: url(images/S-R09-Spicy-Salmon-and-Chorizo-Pizza-CLEAN.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+        </div>
+      </div>
+    </div>
+    <div class="main-slider-pagination position-absolute text-center"></div>
+    </div>
+  </section>
+  <section id="products" class="product-store position-relative">
+    <div class="container display-header d-flex flex-wrap justify-content-between pb-4">
+      <h3 class="mt-3" style="background-color: none;">สินค้า</h3>
+      <div class="btn-right d-flex flex-wrap align-items-center">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="covered-box">
+            <section class="product-store position-relative">
+              <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                  <div class="image-holder zoom-effect">
+                    <img src="images/image-03-4x3-Copy-800x600.jpg" alt="product-item" class="img-fluid zoom-in">
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <div class="product-deatil">
+                    <h5 class="name">
+                      พิซซ่าไร้กลูเตน(S)
+                    </h5>
+                    <p class="price-container">
+                      <span>249฿</span>
+                    </p>
+                    <span class="tag1"></span>
+                  </div>
+                  <div class="description">
+                    <p>พิซซ่าสำหรับคนแพ้กลูเตนจากแป้ง</p>
+                  </div>
+                  <div class="product-info smart-form">
+                    <div class="row">
+                      <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="0" data-price="249" onchange="calculateTotal()">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="covered-box">
+            <section class="product-store position-relative">
+              <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                  <div class="image-holder zoom-effect">
+                    <img src="images/20221024_Talabat_UAE_SixPizza_Pizza_SalmonPizza_Subham-0016_1800x1800.jpg"
+                      alt="product-item" class="img-fluid zoom-in">
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <div class="product-deatil">
+                    <h5 class="name">
+                      พิซซ่าหน้าแซลม่อน(S)
+                    </h5>
+                    <p class="price-container">
+                      <span>299฿</span>
+                    </p>
+                    <span class="tag1"></span>
+                  </div>
+                  <div class="description">
+                    <p>พิซซ่าหน้าแซลม่อนไซส์เอส</p>
+                  </div>
+                  <div class="product-info smart-form">
+                    <div class="row">
+                      <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="0" data-price="299" onchange="calculateTotal()">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+  </section>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="covered-box">
+          <section class="product-store position-relative">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="image-holder zoom-effect">
+                  <img src="images/img_3484.jpg" alt="product-item" class="img-fluid zoom-in">
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="product-deatil">
+                  <h5 class="name">
+                    พิซซ่าเห็ดทรัฟเฟิล(S)
+                  </h5>
+                  <p class="price-container">
+                    <span>299฿</span>
+                  </p>
+                  <span class="tag1"></span>
+                </div>
+                <div class="description">
+                  <p>พิซซ่าเห็นทรัฟเฟิลไซส์เอส</p>
+                </div>
+                <div class="product-info smart-form">
+                  <div class="row">
+                    <div class="counter">
+                      <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                      <input type="text" value="0" data-price="299" onchange="calculateTotal()">
+                      <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="covered-box">
+          <section class="product-store position-relative">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="image-holder zoom-effect">
+                  <img src="images/domino_03.jpg" alt="product-item" class="img-fluid zoom-in">
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="product-deatil">
+                  <h5 class="name">
+                    พิซซ่าหน้าดับเบิ้ลชีส(S)
+                  </h5>
+                  <p class="price-container">
+                    <span>199฿</span>
+                  </p>
+                  <span class="tag1"></span>
+                </div>
+                <div class="description">
+                  <p>พิซซ่าหน้าดับเบิ้ลชีส ชีสเน้น ๆ สำหรับคนรักชีส (ไซส์เอส)</p>
+                </div>
+                <div class="product-info smart-form">
+                  <div class="row">
+                    <div class="counter">
+                      <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                      <input type="text" value="0" data-price="199" onchange="calculateTotal()">
+                      <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  </section>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="cal_cu">
+        <div class="alert alert-primary" role="alert">
+          <strong>Total Price:</strong> <span id="total">0฿</span>
+          <div class="right0">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              นโยบายการสั่งซื้อสินค้า
+            </button>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">นโยบายการสั่งซื้อสินค้า</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                1.เวลาให้บริการปกติสำหรับบริการจัดส่งถึงบ้าน คือ ตั้งแต่เวลา 00-22.00 น. ทุกวัน <br>
+                2.ภาพอาหารผลิตภัณฑ์ ภาชนะ และการตกแต่งที่ปรากฏในเว็บไซต์ใช้เพื่อการโฆษณาเท่านั้น<br>
+                3.บริการจัดส่งอาหารอาจไม่ครอบคลุมทุกพื้นที่<br>
+                4.ไม่มียอดสั่งซื้อขั้นต่ำ โดยคิดค่าบริการจัดส่ง 50 บาท ต่อเที่ยว<br>
+                5.ราคารวมภาษีมูลค่าเพิ่มแล้ว<br>
+                6.ขอสงวนสิทธิ์ในการเปลี่ยนแปลงราคา รายการอาหาร โปรโมชั่น พื้นที่ให้บริการ เวลาในการให้บริการ
+                และเงื่อนไขการบริการอื่นๆที่เกี่ยวข้องโดยไม่ต้องแจ้งให้ทราบล่วงหน้า<br>
+                7.ราคา รายการอาหาร และโปรโมชั่นต่างๆ สำหรับการสั่งซื้อผ่านทางเว็บไซต์ของพิซซ่าฮัทเท่านั้น<br>
+                8.การแสดงข้อมูลบนเว็บไซต์ไม่ได้เป็นการยืนยันว่ามีสินค้าและโปรโมชั่นต่างๆ ครบทุกรายการ
+                การรองรับจำนวนของรายการอาหารที่สั่งขึ้นอยู่กับจำนวนสินค้าของแต่ละสาขา
+                ผลิตภัณฑ์และโปรโมชั่นบางรายการอาจมีจำหน่ายเฉพาะภายในช่วงเวลาที่กำหนด หรือจนกว่าของจะหมด<br>
+                9.บริษัทมีความมุ่งมั่นและตั้งใจเป็นอย่างยิ่งในการทำให้ข้อมูลในเว็บไซต์ถูกต้องและเป็นปัจจุบันที่สุด
+                แต่เนื่องด้วยอาจมีความขัดข้องบางประการจึงอาจส่งผลทำให้ข้อมูลคลาดเคลื่อนหรือไม่ปัจจุบันที่สุดได้<br>
+                10.พนักงานส่งอาหารได้รับค่าแรงจากบริษัทโดยคำนวณจากชั่วโมงการทำงานและการให้บริการส่งอาหาร
+                การให้ทิปไม่ได้เป็นข้อกำหนดของบริษัทแต่ขึ้นอยู่กับความพึงพอใจของลูกค้าหากท่านพอใจในบริการ<br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <h3>แบบฟอร์มรายละเอียดข้อมูลผู้สั่งซื้อ</h3>
+    <div class="d-flex">
+      <form action="" method="">
+        <fieldset class="row">
+          <div class="select_inline1">
+            <div class="row col-12">
+              <label class="col-form-label col-1" for="input_fname">ชื่อ</label>
+              <div class="row col-4">
+                <input type="input_fname" class="form-control" id="input_fname" onkeyup="isThaichar(this.value,this)"
+                  placeholder="ไม่เกิน 30 ตัวอักษร" maxlength="30" required>
+              </div>
+              <label class="col-form-label col-1" for="input_lname">นามสกุล</label>
+              <div class="row col-4">
+                <input type="input_lname" class="form-control" id="input_lname" onkeyup="isThaichar(this.value,this)"
+                  placeholder="ไม่เกิน 50 ตัวอักษร" maxlength="50" required>
+              </div>
+            </div>
+          </div>
+        </fieldset><br>
+        <fieldset class="row">
+          <div class="select_inline1">
+            <div class="row col-12">
+              <label class="col-form-label col-1" for="input_fname">ที่อยู่</label>
+              <div class="row col-10">
+                <input type="input_fname" class="form-control" id="input_fname" onkeyup="isThaichar(this.value,this)"
+                  placeholder="กรอกที่อยู่" maxlength="100" required>
+              </div>
+            </div>
+          </div>
+        </fieldset><br>
+        <form>
+          <fieldset class="row">
+            <div class="select_inline1">
+              <div class="row col-9">
+                <label class="col-form-label col-2" for="tele_num">เบอร์โทรศัพท์</label>
+                <div class="row col-3">
+                  <input class="form-control" id="tele_num" onkeydown="javascript:maskInput()" maxlength="10"
+                    placeholder="10หลัก">
+                </div>
+                <label class="col-form-label col-2" for="student_id">E-mail</label>
+                <div class="row col-3">
+                  <input type="input_fname" class="form-control" id="input_fname" placeholder="E-mail" maxlength="50"
+                    required>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form><br>
+    </div>
+    </fieldset><br><br>
+    <div class="row" style="position: sticky;">
+      <div class="col-1">
+        <button class="btn btn-secondary" type="cancel"
+          style="position:absolute; margin-left:400px;left:50%;width:100px;bottom:0px;">ยกเลิก</button>
+      </div>
+      <div class="col-1">
+        <button class="btn btn-primary" type="submit"
+          style="position:absolute; margin-left:550px;left:50%;width:100px;bottom:0px;">ตกลง</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
